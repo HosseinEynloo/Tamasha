@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Tamasha</string>
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="Favorite">Favorite</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="fillAllFields">Please Fill all fields.</string>
+    <string name="genres">Genres</string>
+    <string name="lastMovies">Last movies</string>
+    <string name="moreInfo">Get more info</string>
+    <string name="empityList">Not found any item!</string>
+    <string name="searchHere">Search...</string>
+    <string name="summary">Summary</string>
+    <string name="writers">Writers</string>
+    <string name="actors">Actors</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

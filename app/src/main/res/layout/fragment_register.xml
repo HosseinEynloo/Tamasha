@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterFragment">
+
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="@dimen/_80mdp"
+        android:layout_height="@dimen/_80mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_50mdp"
+        android:src="@drawable/user_avatar"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userName"
+        style="@style/CustomFillBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_30mdp"
+        android:layout_marginTop="@dimen/_50mdp"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAvatar"
+        app:startIconDrawable="@drawable/ic_round_person_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            style="@style/textViewLightStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14font_mdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userEmail"
+        style="@style/CustomFillBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_30mdp"
+        android:hint="@string/email"
+        android:layout_marginTop="@dimen/_20mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_goneMarginTop="@dimen/_200mdp"
+        app:startIconDrawable="@drawable/ic_round_email_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            style="@style/textViewLightStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_14font_mdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userPassword"
+        style="@style/CustomFillBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_30mdp"
+        android:hint="@string/password"
+        android:layout_marginTop="@dimen/_20mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail"
+        app:layout_goneMarginTop="@dimen/_200mdp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/philippineSilver"
+        app:startIconDrawable="@drawable/ic_round_lock_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            style="@style/textViewLightStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:textSize="@dimen/_14font_mdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50mdp"
+        android:layout_marginTop="@dimen/_40mdp"
+        android:text="@string/submit"
+        app:cornerRadius="@dimen/_3mdp"
+        app:layout_constraintEnd_toEndOf="@+id/userPassword"
+        app:layout_constraintStart_toStartOf="@+id/userPassword"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
+    <ProgressBar
+        android:id="@+id/submitLoading"
+        android:layout_width="@dimen/_20mdp"
+        android:layout_height="@dimen/_20mdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="@+id/btnSubmit"
+        app:layout_constraintStart_toStartOf="@+id/btnSubmit"
+        app:layout_constraintTop_toTopOf="@+id/btnSubmit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
