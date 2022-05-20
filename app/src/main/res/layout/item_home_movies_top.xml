@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/moviePosterImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300mdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/user_avatar"/>
+
+    <!--shadow-->
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150mdp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toBottomOf="@+id/moviePosterImage"/>
+
+        <TextView
+            android:id="@+id/movieInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12mdp"
+            app:layout_constraintBottom_toBottomOf="@+id/moviePosterImage"
+            app:drawableStartCompat="@drawable/ic_round_star_24"
+            android:drawableTint="@color/crayola"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/_5mdp"
+            />
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/movieInfoText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_14mdp"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
