@@ -17,10 +17,12 @@ interface ApiService {
     @GET("genres/{genre_id}/movies")
     suspend fun moviesTopList(@Path("genre_id") id: Int): Response<ResponseMoviesList>
 
+    //GenersList
     @GET("genres")
     suspend fun generList(): Response<ResponseGenreList>
 
 
+    //lastMovies
     @GET("movies")
     suspend fun lastMoviesList(): Response<ResponseMoviesList>
 
