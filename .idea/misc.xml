@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/repository/Tamasha/app/src/main/res/drawable/indicator_active.xml" value="0.137" />
+        <entry key="..\:/android/repository/Tamasha/app/src/main/res/drawable/indicator_inactive.xml" value="0.137" />
+        <entry key="..\:/android/repository/Tamasha/app/src/main/res/layout/fragment_intro.xml" value="0.14130434782608695" />
+        <entry key="..\:/android/repository/Tamasha/app/src/main/res/layout/slider_item_container.xml" value="0.14130434782608695" />
         <entry key="app/src/main/res/drawable/shadow.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.18072916666666666" />

@@ -19,5 +19,11 @@
     <color name="philippineSilverAlpha">#94B3B3B3</color>
     <color name="gunmetal">#2C2E43</color>
 
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+
 
 </resources>

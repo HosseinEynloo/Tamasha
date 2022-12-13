@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/introFragment">
 
     <fragment
         android:id="@+id/favoriteFragment"
@@ -42,4 +42,9 @@
         android:id="@+id/detailFragment"
         android:name="com.hossein.tamasha.ui.deatail.DetailFragment"
         android:label="DetailFragment" />
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.hossein.tamasha.ui.intro.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" />
 </navigation>
